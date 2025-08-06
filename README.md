@@ -3,29 +3,41 @@
 # Evaluación Práctica - Ingeniería de Software V
 
 ## Información del Estudiante
-- **Nombre:**
-- **Código:**
-- **Fecha:**
+- **Nombre: Nicolás Cuéllar Molina**
+- **Código: A00394970**
+- **Fecha: 6-Agosto/2025**
 
 ## Resumen de la Solución
-[Breve descripción de tu implementación]
+Creo un archivo Dockerfile para crear el contenedor de nuestra aplicación, en este caso la imagen que se necesita es node con la versión 18. En el contenedor la carpeta de trabajo será /app, Copiamos todo el archivo de package.json que contiene nuestras dependencias, ejecutamos el npm install para instalar las dependencias, copiamos el resto de archivos y exponemos nuestro puerto. Finalmente se corre la aplicación.
 
 ## Dockerfile
-[Explica las decisiones tomadas en la creación del Dockerfile]
+
+La versión de node tomada por ser la usada en el app.js
+Para el CMD se observó que en el package.json el script para ejecutar la app era "start"
 
 ## Script de Automatización
 [Describe cómo funciona tu script y las funcionalidades implementadas]
 
 ## Principios DevOps Aplicados
-1. [Principio 1]
-2. [Principio 2]
-3. [Principio 3]
+1. Automatización
+2. Mejora Continua
+3. Siempre creando con el objetivo en mente
 
 ## Captura de Pantalla
-[Incluye al menos una captura de pantalla que muestre tu aplicación funcionando en el contenedor]
+![Docker Screenshot](docker.png)
+
+![Postman Screenshot](postman.png)
 
 ## Mejoras Futuras
-[Describe al menos 3 mejoras que podrían implementarse en el futuro]
+
+- Crear el script de Automatización
+- Agilizar el proceso de build, ya que la versión resultó muy pesada
+- Investigar de mejoras en el proceso de container
 
 ## Instrucciones para Ejecutar
-[Instrucciones paso a paso para ejecutar tu solución]
+
+Primer se construye la aplicación con:
+docker build -t nodeapp .
+
+Luego, se ejecuta la aplicación con:
+docker run -p 3000:3000 nodeapp
