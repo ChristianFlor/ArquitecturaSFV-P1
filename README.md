@@ -8,10 +8,16 @@
 - **Fecha:**
 
 ## Resumen de la Solución
-[Breve descripción de tu implementación]
+Se realizó un Dockerfile en base a un tutorial. Este contiene el proceso para crear una imagen para la aplicacion en node.
 
 ## Dockerfile
-[Explica las decisiones tomadas en la creación del Dockerfile]
+Se usa node 18-alpine debido a que es una versione recomendada (a diferencia del 10-alpine del tutorial)
+El primer run busca crear un usuario con permisos limitados por seguridad de no usar erroneamente un usuario root
+Se copian los packages json
+se establece el usuario previamente creado como USER
+se corre npm i
+se copian los permisos del usuario node a la imagen
+
 
 ## Script de Automatización
 [Describe cómo funciona tu script y las funcionalidades implementadas]
