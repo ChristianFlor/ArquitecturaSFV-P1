@@ -48,4 +48,7 @@ Desarrollar un script (bash o PowerShell) que:
    - Claridad de la documentación (10%)
    - Comprensión de los principios DevOps (10%)
 
+## Tiempo Disponible
+2 horas
+
 ¡Buena suerte!
