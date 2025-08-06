@@ -3,12 +3,14 @@
 # Evaluación Práctica - Ingeniería de Software V
 
 ## Información del Estudiante
-- **Nombre:**
-- **Código:**
-- **Fecha:**
+- **Nombre:Isabella Huila Cerón**
+- **Código:A00394751**
+- **Fecha:6/08/2025**
 
 ## Resumen de la Solución
-[Breve descripción de tu implementación]
+No pude seguir porque me salía este error a cada rato: 
+ERROR: failed to solve: failed to checksum file .git/HEAD: archive/tar: unknown file mode ?rwxr-xr-x
+aún si contruía un dockerignore
 
 ## Dockerfile
 [Explica las decisiones tomadas en la creación del Dockerfile]
