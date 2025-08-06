@@ -3,29 +3,39 @@
 # Evaluación Práctica - Ingeniería de Software V
 
 ## Información del Estudiante
-- **Nombre:**
-- **Código:**
-- **Fecha:**
+- **Nombre** Alejandro Amu Garcia
+- **Código:** A00395686
+- **Fecha:** 6/8/25
 
 ## Resumen de la Solución
-[Breve descripción de tu implementación]
+No se realizo implementacion de ninguna clase mas alla del docker
 
 ## Dockerfile
-[Explica las decisiones tomadas en la creación del Dockerfile]
+Este Dockerfile crea una imagen ligera de Node.js basada en Alpine Linux para ejecutase. Se establecio el directorio de trabajo, copia el código fuente al contenedor, instala las dependencias con npm install y configura la variable de entorno en el Puerto 3000 y expone este puerto para permitir conexiones externas y define como comando de inicio node app.js, que ejecuta la aplicación.
 
 ## Script de Automatización
-[Describe cómo funciona tu script y las funcionalidades implementadas]
+No fue hecho
 
 ## Principios DevOps Aplicados
-1. [Principio 1]
-2. [Principio 2]
-3. [Principio 3]
+1. IAC
 
 ## Captura de Pantalla
-[Incluye al menos una captura de pantalla que muestre tu aplicación funcionando en el contenedor]
+![alt text](image.png)
 
 ## Mejoras Futuras
-[Describe al menos 3 mejoras que podrían implementarse en el futuro]
+1. Se podria automatizar el monitoreo del contenedor para saber el estado del mismo
+2. Se podrian añadir mas intrucciones al dockerfile dependiendo de lo que se quiera
 
 ## Instrucciones para Ejecutar
-[Instrucciones paso a paso para ejecutar tu solución]
+La aplicacion entregada solo cuenta con el dockerfile por lo cual se debera de hacer el build, el run y usar un comando
+para comprobar y/o para ver dentro del contenedor.
+
+comandos usados:
+
+docker build . -t app
+
+docker run -d -p 3000:3000 app 
+
+curl http://localhost:3000 (comprobamos la conexion al docker y nos devuelve el contenido bruto de la pagina)
+
+docker logs #"id del contenedor" (para ver los logs del contenedor y verificar el estado)
