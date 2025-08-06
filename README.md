@@ -4,28 +4,42 @@
 
 ## Información del Estudiante
 - **Nombre:**
+    Santaigo Arboleda Velasco
 - **Código:**
+    A00369824
 - **Fecha:**
+06/08/2025
 
 ## Resumen de la Solución
-[Breve descripción de tu implementación]
+Desarrolle una solucion de una app de Node, con Docker donde construyo una imagen y ejecuto un contenedor.
+
 
 ## Dockerfile
-[Explica las decisiones tomadas en la creación del Dockerfile]
+- Lo que hice fue usar una imagen de node la cual es node:18
+- Coloque un workdir, el cual es el directorio de trabajo que se llama app
+- Al igual use el COPY para tener todas las dependencias del package.json de la app para luego correrlas con npm install e instalarlas
+- Copie el codigo fuente con el siguiente COPY
+- Por ultimo use el CMD para correr npm start e iniciar la app
 
 ## Script de Automatización
 [Describe cómo funciona tu script y las funcionalidades implementadas]
 
 ## Principios DevOps Aplicados
-1. [Principio 1]
-2. [Principio 2]
-3. [Principio 3]
+1. Estandarizar el proceso de despliegue evitando errores en la configuracion.
+2. Desarrollo de codigos de insfraestructura como scripts con las mismas practicas que el codigo.
+
 
 ## Captura de Pantalla
-[Incluye al menos una captura de pantalla que muestre tu aplicación funcionando en el contenedor]
+![alt text](image.png)
 
 ## Mejoras Futuras
-[Describe al menos 3 mejoras que podrían implementarse en el futuro]
+- Realizar el tema de los scripts
+- Agregarle mas cosas a la app como una interfaz
+- Implementarle mas cosas de buenas practicas de docker
+
+
+
 
 ## Instrucciones para Ejecutar
-[Instrucciones paso a paso para ejecutar tu solución]
+1) docker build -t nodeapp .
+2) docker run -p 3000:3000 nodeapp
