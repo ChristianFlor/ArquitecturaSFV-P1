@@ -11,6 +11,9 @@ Desarrollar una solución que demuestre la comprensión de la contenerización, 
 - Ejecutar un contenedor a partir de la imagen
 - Verificar que la aplicación funciona correctamente
 
+
+
+
 ### 2. Script de Automatización (40%)
 Desarrollar un script (bash o PowerShell) que:
 - Verifique si Docker está instalado
