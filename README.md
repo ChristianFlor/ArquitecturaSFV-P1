@@ -3,9 +3,9 @@
 # Evaluación Práctica - Ingeniería de Software V
 
 ## Información del Estudiante
-- **Nombre:**
-- **Código:**
-- **Fecha:**
+- **Nombre: Isabella Ocampo Soto**
+- **Código: A00382369**
+- **Fecha: 06/08/2025**
 
 ## Resumen de la Solución
 [Breve descripción de tu implementación]
